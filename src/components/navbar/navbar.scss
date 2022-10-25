@@ -1,0 +1,19 @@
+.navlinks__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid green;
+  left: 0;
+  p {
+    padding: 0.5rem 1rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    color: #ffffff;
+  }
+}

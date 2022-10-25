@@ -7,7 +7,9 @@ import { Home, About, Login, Register } from "./pages";
 const App = () => {
   return (
     <div className="App">
+      
       <Routes>
+      
         <Route path="/" exact element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
