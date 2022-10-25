@@ -1,7 +1,9 @@
 import React from 'react'
+import CurrencySelector from '../../components/currency/CurrencySelector'
 import Navbar from '../../components/navbar/Navbar'
 import Wrapper from '../../components/wrapper/Wrapper'
 import WrapperText from '../../components/wrapper/WrapperText'
+import './home.scss'
 
 const Home = () => {
   return (
@@ -14,7 +16,13 @@ const Home = () => {
       </Wrapper>
 
       <div className="table__container">
-        
+        <div className="table__container-div">
+          <div className="buysellbtn">
+            <button>Buy</button>
+            <button>Sell</button>
+          </div>
+          <CurrencySelector />
+        </div>
       </div>
     </div>
     
