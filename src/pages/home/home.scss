@@ -13,6 +13,7 @@
     width: 90%;
     margin: auto;
     padding: 1rem;
+    overflow: hidden;
     .buysellbtn {
       display: flex;
       gap: 1%;
@@ -33,4 +34,16 @@
       }
     }
   }
+}
+.buy {
+  background: #38b30f;
+  border-radius: 6px;
+  color: white;
+  padding: 0.5rem 2.5rem;
+  cursor: pointer;
+}
+.empty__height{
+  height: 500px;
+  background-color: red;
+  width: 100%;
 }

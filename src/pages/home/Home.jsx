@@ -1,23 +1,25 @@
-import React from 'react'
-import CurrencySelector from '../../components/currency/CurrencySelector'
-import Navbar from '../../components/navbar/Navbar'
-import ProfitTable from '../../components/table/ProfitTable'
+import React from "react";
+import CurrencySelector from "../../components/currency/CurrencySelector";
+import HowToBuy from "../../components/howTo/HowToBuy";
+import Navbar from "../../components/navbar/Navbar";
+import ProfitTable from "../../components/table/ProfitTable";
 
-import Wrapper from '../../components/wrapper/Wrapper'
-import WrapperText from '../../components/wrapper/WrapperText'
-import './home.scss'
+import Wrapper from "../../components/wrapper/Wrapper";
+import WrapperText from "../../components/wrapper/WrapperText";
+import "./home.scss";
 
 const Home = () => {
   return (
     <div>
       <Wrapper>
-        <Navbar/>
+        <Navbar />
         <div className="wrapper__container-text">
-        <WrapperText /> 
-       </div> 
+          <WrapperText />
+        </div>
       </Wrapper>
 
-      <div className="table__container">
+      <section className="table__container">
+        {/* containerfor the table */}
         <div className="table__container-div">
           <div className="buysellbtn">
             <button>Buy</button>
@@ -26,10 +28,13 @@ const Home = () => {
           <CurrencySelector />
           <ProfitTable />
         </div>
-      </div>
+      </section>
+      <div className="empty__height"></div>
+      <section className="howTo">
+        <HowToBuy />
+      </section>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,64 +1,130 @@
-import React from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import './table.scss'
+import React from 'react'
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
 const ProfitTable = () => {
-  const columns = [
-    { field: "id", headerName: "ID", width: 90 },
-    {
-      field: "firstName",
-      headerName: "First name",
-      width: 150,
-      editable: true,
-    },
-    {
-      field: "lastName",
-      headerName: "Last name",
-      width: 150,
-      editable: true,
-    },
-    {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      width: 110,
-      editable: true,
-    },
-    {
-      field: "fullName",
-      headerName: "Full name",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 160,
-      valueGetter: (params) =>
-        `${params.row.firstName || ""} ${params.row.lastName || ""}`,
-    },
-  ];
-
-  const rows = [
-    { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
-    { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-    { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-    { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-    { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-    { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-    { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-    { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-    { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
-  ];
+      const rows = [
+        {
+          id: 1,
+          user: "Acer Nitro 5",
+          img: "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "John Smith",
+          avail: 39393,
+          amount: 785,
+          method: "786",
+          status: "Buy",
+        },
+        {
+          id: 2,
+          user: "Playstation 5",
+          img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "Michael Doe",
+          avail: 39393,
+          amount: 900,
+          method: "786 ",
+          status: "Buy",
+        },
+        {
+          id: 3,
+          user: "Redragon S101",
+          img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "John Smith",
+          avail: 39393,
+          amount: 35,
+          method: "786",
+          status: "Buy",
+        },
+        {
+          id: 4,
+          user: "Razer Blade 15",
+          img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "Jane Smith",
+          avail: 39393,
+          amount: 920,
+          method: "786",
+          status: "Buy",
+        },
+        {
+          id: 5,
+          user: "ASUS ROG Strix",
+          img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "Harold Carol",
+          avail: 39393,
+          amount: 2000,
+          method: "786",
+          status: "Buy",
+        },
+        {
+          id: 5,
+          user: "ASUS ROG Strix",
+          img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "Harold Carol",
+          avail: 39393,
+          amount: 2000,
+          method: "786",
+          status: "Buy",
+        },
+        {
+          id: 5,
+          user: "ASUS ROG Strix",
+          img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "Harold Carol",
+          avail: 39393,
+          amount: 2000,
+          method: "786",
+          status: "Buy",
+        },
+        {
+          id: 5,
+          user: "ASUS ROG Strix",
+          img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
+          customer: "Harold Carol",
+          avail: 39393,
+          amount: 2000,
+          method: "786",
+          status: "Buy",
+        },
+      ];
   return (
-    <div className="table__grid">
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-        disableSelectionOnClick
-        experimentalFeatures={{ newEditingApi: true }}
-      />
-    </div>
-  );
-};
+   <>
+    <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+        
+            {/* <TableCell className="tableCell">Type</TableCell> */}
+            <TableCell className="tableCell">User</TableCell>
+            <TableCell className="tableCell">Available Qty</TableCell>
+            <TableCell className="tableCell">Maximum Qty</TableCell>
+            <TableCell className="tableCell">Rate</TableCell>
+            
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow key={row.id}>
+             
+             
+              <TableCell className="tableCell">{row.customer}</TableCell>
+              <TableCell className="tableCell">{row.avail} <span>USD</span> </TableCell>
+              <TableCell className="tableCell">{row.amount} <span>USD</span> </TableCell>
+              <TableCell className="tableCell">{row.method} <span>NGN</span> </TableCell>
+              <TableCell className="tableCell">
+                <span className='tableCell buy'>{row.status}</span>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+    
+   </>
+  )
+}
 
-export default ProfitTable;
+export default ProfitTable

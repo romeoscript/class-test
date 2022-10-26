@@ -1,5 +1,13 @@
 import nairabg from './Naira-and-Dollar1.png'
+import avatar from './Ellipse 1.png'
+import deposit from './deposit 1.png'
+import search from './search market place 1.png'
+import recieve from './payment 1.png'
 
 export {
-    nairabg
+    nairabg,
+    avatar,
+    recieve,
+    search,
+    deposit
 }
