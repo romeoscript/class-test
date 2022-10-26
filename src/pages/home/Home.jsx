@@ -1,6 +1,8 @@
 import React from 'react'
 import CurrencySelector from '../../components/currency/CurrencySelector'
 import Navbar from '../../components/navbar/Navbar'
+import ProfitTable from '../../components/table/ProfitTable'
+
 import Wrapper from '../../components/wrapper/Wrapper'
 import WrapperText from '../../components/wrapper/WrapperText'
 import './home.scss'
@@ -22,6 +24,7 @@ const Home = () => {
             <button>Sell</button>
           </div>
           <CurrencySelector />
+          <ProfitTable />
         </div>
       </div>
     </div>
