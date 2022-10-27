@@ -4,7 +4,7 @@ import { artbook } from "../../assets";
 
 const ExchangeFlex2 = () => {
   return (
-    <div className="exchange_flex">
+    <div className="exchange_flex how__buy">
       <div className="exchange_content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, quis
