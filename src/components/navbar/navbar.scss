@@ -4,8 +4,9 @@
   align-items: center;
   position: fixed;
   top: 0;
+  transition: all 0.5s ease-in;
   width: 100%;
-  border: 1px solid green;
+  // border: 1px solid green;
   left: 0;
   p {
     padding: 0.5rem 1rem;
@@ -16,4 +17,8 @@
     line-height: 48px;
     color: #ffffff;
   }
+}
+.navlinks__container.active{
+  background-color: #2C6518!important;
+  z-index: 10;
 }

@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './table.scss'
 
-const ProfitTable = () => {
+const LossTable = () => {
       const rows = [
         {
           id: 1,
@@ -128,4 +128,4 @@ const ProfitTable = () => {
   )
 }
 
-export default ProfitTable
+export default LossTable

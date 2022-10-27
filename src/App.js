@@ -5,6 +5,7 @@ import Footer from "./footer/Footer";
 import { Home, About, Login, Register } from "./pages";
 // import Files from "./component/files/Files";
 
+
 const App = () => {
   return (
     <div className="App">

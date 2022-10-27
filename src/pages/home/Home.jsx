@@ -8,6 +8,7 @@ import WrapperText from "../../components/wrapper/WrapperText";
 import ExchangeFlex  from '../../components/exchangeFlex/ExchangeFlex'
 import "./home.scss";
 import ExchangeFlex2  from '../../components/exchangeFlex/ExchangeFlex2'
+import LossTable from "../../components/table/LossTable";
 
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
           </div>
           <CurrencySelector />
           <ProfitTable />
+          <LossTable />
         </div>
       </section>
       <div className="empty__height"></div>
