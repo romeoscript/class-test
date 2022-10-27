@@ -2,7 +2,7 @@ import React from "react";
 import "./currencysel.scss";
 import { Refresh, ArrowDown2 } from "iconsax-react";
 
-const CurrencySelector = () => {
+const CurrencySelector = ({buySell}) => {
   return (
     <div className="currency__selector">
       <div>
@@ -16,7 +16,7 @@ const CurrencySelector = () => {
             <option value="POUNDS">POUNDS</option>
             <option value="EURO">EURO</option>
           </select>
-          <span className="custom__arrow">
+          <span className={buySell?'sold__arrow':"custom__arrow"}>
             <ArrowDown2 size="20" color="#FFF" />
           </span>
         </div>
@@ -36,7 +36,7 @@ const CurrencySelector = () => {
             <option value="Internet">Internet Banking</option>
             <option value="Card">Card</option>
           </select>
-          <span className="custom__arrow">
+          <span className={buySell?'sold__arrow':"custom__arrow"}>
             <ArrowDown2 size="20" color="#FFF" />
           </span>
         </div>
@@ -45,7 +45,7 @@ const CurrencySelector = () => {
         <label htmlFor="" style={{ visibility: "hidden" }}>
           mine
         </label>
-        <div className="refresh">
+        <div className={buySell?'refreshed':"refresh"}>
           refresh <Refresh size="12" color="#3D543E" />
         </div>
       </div>

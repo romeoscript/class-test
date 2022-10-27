@@ -18,7 +18,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 785,
           method: "786",
-          status: "Buy",
+          status: "sell",
         },
         {
           id: 2,
@@ -28,7 +28,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 900,
           method: "786 ",
-          status: "Buy",
+          status: "sell",
         },
         {
           id: 3,
@@ -38,7 +38,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 35,
           method: "786",
-          status: "Buy",
+          status: "sell",
         },
         {
           id: 4,
@@ -48,7 +48,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 920,
           method: "786",
-          status: "Buy",
+          status: "sell",
         },
         {
           id: 5,
@@ -58,7 +58,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 2000,
           method: "786",
-          status: "Buy",
+          status: "sell",
         },
         {
           id: 5,
@@ -68,7 +68,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 2000,
           method: "786",
-          status: "Buy",
+          status: "sell",
         },
         {
           id: 5,
@@ -78,7 +78,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 2000,
           method: "786",
-          status: "Buy",
+          status: "sell",
         },
         {
           id: 5,
@@ -88,7 +88,7 @@ const LossTable = () => {
           avail: 39393,
           amount: 2000,
           method: "786",
-          status: "Buy",
+          status: "sell",
         },
       ];
   return (
@@ -111,12 +111,12 @@ const LossTable = () => {
             <TableRow key={row.id} className='table_row'>
              
              
-              <TableCell className="tableCell tcel2" > <div className='table_image'> <img src={row.img} alt="" /></div><p>{row.Person}</p> </TableCell>
+              <TableCell className="tableCell tcel2" > <img className='table_image' src={row.img} alt="" />{row.Person} </TableCell>
               <TableCell className="tableCell">{row.avail} <span>USD</span> </TableCell>
               <TableCell className="tableCell">{row.amount} <span>USD</span> </TableCell>
               <TableCell className="tableCell">{row.method} <span>NGN</span> </TableCell>
               <TableCell className="tableCell">
-                <span className='tableCell buy'>{row.status}</span>
+                <span className='tableCell loss'>{row.status}</span>
               </TableCell>
             </TableRow>
           ))}

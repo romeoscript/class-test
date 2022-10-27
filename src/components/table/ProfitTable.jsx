@@ -111,7 +111,7 @@ const ProfitTable = () => {
             <TableRow key={row.id} className='table_row'>
              
              
-              <TableCell className="tableCell tcel2" > <div className='table_image'> <img src={row.img} alt="" /></div><p>{row.Person}</p> </TableCell>
+              <TableCell className="tableCell tcel2" > <img className='table_image' src={row.img} alt="" />{row.Person} </TableCell>
               <TableCell className="tableCell">{row.avail} <span>USD</span> </TableCell>
               <TableCell className="tableCell">{row.amount} <span>USD</span> </TableCell>
               <TableCell className="tableCell">{row.method} <span>NGN</span> </TableCell>
