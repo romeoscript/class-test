@@ -2,7 +2,10 @@
     text-align: center;
     color: #3D543E;
     padding: 1rem;
-    border: 3px solid green;
+    // border: 3px solid green;
+    border-radius: 59% 100% 99% 0% / 100% 0% 54% 0% ;
+    background: rgba(237, 255, 231, 0.96);
+    min-height: 25rem;
 }
 .how__flex {
   display: flex;
@@ -14,7 +17,7 @@
     width: 200px;
     padding: 1rem;
     text-align: center;
-    border: 1px solid green;
+    // border: 1px solid green;
     display: flex;
     align-items: center;
     justify-content: flex-start;

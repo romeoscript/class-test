@@ -1,0 +1,23 @@
+.exchange_flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2%;
+  min-height: 25rem;
+  padding: 1rem;
+  font-family: "Poppins";
+
+  font-size: 17px;
+  line-height: 30px;
+
+  color: #36a012;
+  div {
+    flex-basis: 50%;
+  }
+  img {
+    display: block;
+
+    width: 30%;
+    // height: 100px;
+  }
+}

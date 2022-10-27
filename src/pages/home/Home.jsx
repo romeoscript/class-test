@@ -3,10 +3,12 @@ import CurrencySelector from "../../components/currency/CurrencySelector";
 import HowToBuy from "../../components/howTo/HowToBuy";
 import Navbar from "../../components/navbar/Navbar";
 import ProfitTable from "../../components/table/ProfitTable";
-
 import Wrapper from "../../components/wrapper/Wrapper";
 import WrapperText from "../../components/wrapper/WrapperText";
+import ExchangeFlex  from '../../components/exchangeFlex/ExchangeFlex'
 import "./home.scss";
+import ExchangeFlex2  from '../../components/exchangeFlex/ExchangeFlex2'
+
 
 const Home = () => {
   return (
@@ -32,6 +34,12 @@ const Home = () => {
       <div className="empty__height"></div>
       <section className="howTo">
         <HowToBuy />
+      </section>
+      <section className="flexTransaction">
+        <ExchangeFlex />
+      </section>
+      <section className="flexTransaction">
+        <ExchangeFlex2 />
       </section>
     </div>
   );
