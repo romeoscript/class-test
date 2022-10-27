@@ -9,6 +9,7 @@ import ExchangeFlex from "../../components/exchangeFlex/ExchangeFlex";
 import "./home.scss";
 import ExchangeFlex2 from "../../components/exchangeFlex/ExchangeFlex2";
 import LossTable from "../../components/table/LossTable";
+import HowToSell from "../../components/howTo/HowToSell";
 
 const Home = () => {
   const [buySell, setBuySell] = useState(false);
@@ -41,7 +42,8 @@ const Home = () => {
       </section>
       <div className="empty__height"></div>
       <section className="howTo">
-        <HowToBuy />
+        {buySell?<HowToSell/>: <HowToBuy />}
+       
       </section>
       <section className="flexTransaction">
         <ExchangeFlex />
