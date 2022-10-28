@@ -93,7 +93,7 @@ const ProfitTable = () => {
       ];
   return (
    <>
-    <TableContainer component={Paper} style={{ height:'70%',overflow:'hidden' }}>
+    <TableContainer component={Paper} style={{ height:'70%',overflowY:'hidden' }}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>

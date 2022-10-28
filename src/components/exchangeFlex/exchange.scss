@@ -11,6 +11,9 @@
   line-height: 30px;
 
   color: #36a012;
+  @media (max-width:550px) {
+    flex-direction: column;
+  }
   div {
     flex-basis: 50%;
   }
@@ -19,5 +22,8 @@
 
     width: 30%;
     // height: 100px;
+    @media (max-width:550px) {
+      width: 60%;
+    }
   }
 }

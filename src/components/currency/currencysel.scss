@@ -4,6 +4,15 @@
   align-items: center;
   padding: 0.5rem;
   border-bottom: 1px solid grey;
+  @media (max-width: 550px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+    gap: 2%;
+    margin: 0.5rem;
+  }
   div {
     flex-basis: 22%;
 
@@ -11,7 +20,8 @@
       position: relative;
     }
   }
-  select,input {
+  select,
+  input {
     padding: 0.3rem 0.5rem;
     // appearance: none;
     width: 100%;
@@ -21,7 +31,7 @@
     outline: none;
     height: 100%;
   }
-  .sold__arrow{
+  .sold__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,13 +77,13 @@
     line-height: 24px;
     color: #718c72;
   }
-   .refreshed {
+  .refreshed {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 168px;
     height: 32px;
-    background: #FEE8E0;
+    background: #fee8e0;
     border-radius: 3px;
     text-align: center;
   }
