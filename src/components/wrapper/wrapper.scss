@@ -9,6 +9,9 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  @media (max-width:550px) {
+    height: 70vh;
+  }
 }
 
 .wrapper__text {
@@ -23,6 +26,10 @@
     line-height: 94px;
     text-align: center;
     color: #ffffff;
+    @media (max-width:550px) {
+      font-size: 30px;
+    line-height: 42px;
+    }
   }
   button {
     padding: 0.6rem 3rem;

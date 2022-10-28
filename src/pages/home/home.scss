@@ -4,6 +4,9 @@
   height: 500px;
   display: flex;
   width: 100%;
+  @media (max-width:550px) {
+    top: 60%;
+  }
   .table__container-div {
     background: #ffffff;
     box-shadow: 0px 14px 46px -1px rgba(0, 0, 0, 0.18);
