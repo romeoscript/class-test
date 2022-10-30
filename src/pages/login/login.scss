@@ -4,6 +4,9 @@
   align-items: center;
 //   border: 1px solid red;
   width: 80%;
+  @media (max-width:700px) {
+    flex-direction: column;
+  }
   .auth__wrapper-text {
     flex-basis: 40%;
     h2 {
@@ -13,6 +16,9 @@
       font-size: 56px;
       line-height: 92px;
       color: #ffffff;
+      @media (max-width:700px) {
+      font-size: 100%;
+      }
     }
   }
 }

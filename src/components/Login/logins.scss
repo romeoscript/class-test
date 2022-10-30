@@ -1,15 +1,15 @@
 .logins {
-//   flex-basis: 49%;
+  //   flex-basis: 49%;
   width: 340px;
   background: #ffffff;
   box-shadow: 0px 14px 46px -1px rgba(0, 0, 0, 0.18);
   border-radius: 13px;
   padding: 1rem;
-  form{
+  form {
     min-height: 15rem;
   }
   input {
-    padding: 0.7rem;
+    padding: 0 0.7rem;
     background: rgba(218, 255, 205, 0.96);
     border-radius: 9px;
     display: block;
@@ -18,7 +18,7 @@
     color: #38b30f;
     outline: none;
     margin-bottom: 0.9rem;
-    height: 60px;
+    height: 55px;
   }
   input[type="submit"] {
     background: #38b30f;
@@ -29,4 +29,30 @@
   p {
     text-align: center;
   }
+}
+.name__section {
+  display: flex;
+  gap: 4%;
+}
+.choose__pin {
+  display: flex;
+  margin: 0.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+  div{
+    display: flex;
+  }
+  span {
+    width: 30px!important;
+    height: 30px;
+    background: rgba(218, 255, 205, 0.96);
+    border-radius: 9px;
+    display: block;
+    margin: 0.2rem;
+  }
+}
+.logins.loginss{
+    @media (max-width:768px) {
+        margin-top: 8rem;
+    }
 }
