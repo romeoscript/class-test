@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CurrencySelector from "../../components/currency/CurrencySelector";
 import HowToBuy from "../../components/howTo/HowToBuy";
-import Navbar from "../../components/navbar/Navbar";
+// import Navbar from "../../components/navbar/Navbar";
 import ProfitTable from "../../components/table/ProfitTable";
 import Wrapper from "../../components/wrapper/Wrapper";
 import WrapperText from "../../components/wrapper/WrapperText";
@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div>
       <Wrapper>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="wrapper__container-text">
           <WrapperText />
         </div>

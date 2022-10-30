@@ -8,6 +8,7 @@ import artbook from './Artboard 33 1.png'
 import forsale from './for sale 1.png'
 import release from './release funds 1.png'
 import confirm from './confirm payment 1.png'
+import confirmed from './confirmed.png'
 
 export {
     nairabg,
@@ -19,5 +20,6 @@ export {
     artbook,
     forsale,
     release,
-    confirm
+    confirm,
+    confirmed
 }

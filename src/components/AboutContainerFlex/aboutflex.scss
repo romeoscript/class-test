@@ -1,0 +1,28 @@
+.about__flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
+  gap: 2%;
+  div {
+    flex-basis: 49%;
+    // border: 1px solid green;
+    min-height: 20rem;
+    &:last-child{
+        text-align: center;
+    }
+  }
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #36a012;
+  }
+  img {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    // height: 308px;
+  }
+}
