@@ -1,0 +1,18 @@
+.auth__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//   border: 1px solid red;
+  width: 80%;
+  .auth__wrapper-text {
+    flex-basis: 40%;
+    h2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 92px;
+      color: #ffffff;
+    }
+  }
+}

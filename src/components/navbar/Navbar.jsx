@@ -25,7 +25,7 @@ const Navbar = () => {
           bgChange ? "navlinks__container active" : "navlinks__container"
         }
       >
-        <Link to="/">
+        <Link to="/" >
           <p>Trade</p>
         </Link>
         <Link to="./about">
@@ -43,16 +43,16 @@ const Navbar = () => {
       {!navToggle && <MdClose className="menu" onClick={toggleMobile} />}
       {!navToggle && (
         <div className="mobile__view">
-          <Link to="/">
+          <Link to="/" onClick={()=>  setNavToggle(!navToggle)}>
             <p>Trade</p>
           </Link>
-          <Link to="./about">
+          <Link to="./about" onClick={()=>  setNavToggle(!navToggle)}>
             <p>About us</p>
           </Link>
-          <Link to="/login">
+          <Link to="/login" onClick={()=>  setNavToggle(!navToggle)}>
             <p>Log in</p>
           </Link>
-          <Link to="/register">
+          <Link to="/register" onClick={()=>  setNavToggle(!navToggle)}>
             <p>Sign up</p>
           </Link>
         </div>
