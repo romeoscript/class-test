@@ -6,7 +6,7 @@ const AboutFlex2 = () => {
   return (
     <section className="about__flex">
       <div>
-        <img src={confirmed} alt="" />
+        <img src={confirmed} alt="" className="aboutfleximg" />
         <p>
           {" "}
           Sociis pulvinar tempus, rutrum vel id tristique est. Venenatis eget

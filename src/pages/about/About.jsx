@@ -14,7 +14,9 @@ const About = () => {
     <div>
       <Wrapper>
         {/* <Navbar /> */}
-        <div className="wrapper__container-text"></div>
+        <div className="wrapper__container-text">
+         <h1>About Us</h1>
+        </div>
       </Wrapper>
 
       <section className="table__container about__container">

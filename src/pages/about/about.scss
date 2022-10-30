@@ -1,7 +1,14 @@
-.table__container.about__container{
-    top: 60%;
-.table__container-div.about__div{
+.table__container.about__container {
+  top: 60%;
+  @media (max-width: 550px) {
+    top: 40%;
+  }
+  .table__container-div.about__div {
     min-height: 750px;
     padding: 1.5rem;
+  }
 }
+.wrapper__container-text h1 {
+  color: white;
+  border-bottom: 3px solid white;
 }
