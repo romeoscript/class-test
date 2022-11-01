@@ -16,8 +16,8 @@ const Registrations = () => {
             <input type="text" />
           </div>
         </section>
-        <label htmlFor="password">password</label> <br />
-        <input type="password" />
+        <label htmlFor="email">E-mail</label> <br />
+        <input type="email" />
         <section className="name__section">
           <div>
             {" "}
