@@ -1,16 +1,16 @@
 .wrapper__container {
-  height: 100vh;
+  min-height: 100vh;
   background: url(../../assets/Naira-and-Dollar1.png);
- background-repeat: no-repeat;
- background-position: center;
- background-size:cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  @media (max-width:550px) {
-    height: 70vh;
+  @media (max-width: 550px) {
+    min-height: 70vh;
   }
 }
 
@@ -26,9 +26,9 @@
     line-height: 94px;
     text-align: center;
     color: #ffffff;
-    @media (max-width:550px) {
+    @media (max-width: 550px) {
       font-size: 30px;
-    line-height: 42px;
+      line-height: 42px;
     }
   }
   button {
@@ -43,12 +43,12 @@
     font-size: 18px;
     color: #0c1e04;
     cursor: pointer;
-    &:hover{
-        opacity: 0.8;
+    &:hover {
+      opacity: 0.8;
     }
-    &:last-child{
-        background: #38B30F;
-        color: white;
+    &:last-child {
+      background: #38b30f;
+      color: white;
     }
   }
 }
