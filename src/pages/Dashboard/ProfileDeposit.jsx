@@ -1,10 +1,10 @@
 import React from "react";
 import "../../assets/dashboardcss/profileauth.scss";
+import "../../assets/dashboardcss/Deposit.scss";
 import Wrapper from "../../components/wrapper/Wrapper";
-import ProfileInfo from "../../components/Dashboard/ProfileInfo";
-import ProfileSettings from "../../components/Dashboard/ProfileSettings";
-
 import ProfileSidebar from "./ProfileSidebar";
+import DepositUsdt from "../../components/Dashboard/DepositUsdt";
+import DepositHistory from "../../components/Dashboard/DepositHistory";
 
 const ProfileDeposit = () => {
   return (
@@ -12,8 +12,8 @@ const ProfileDeposit = () => {
       <div className="profile__wrapper">
         <ProfileSidebar />
         <aside className="profile__information">
-          <ProfileInfo />
-          <ProfileSettings />
+          <DepositUsdt />
+          <DepositHistory />
         </aside>
       </div>
     </Wrapper>

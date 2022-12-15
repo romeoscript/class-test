@@ -9,8 +9,10 @@ import forsale from './for sale 1.png'
 import release from './release funds 1.png'
 import confirm from './confirm payment 1.png'
 import confirmed from './confirmed.png'
+import code from './qrcode.png'
 
 export {
+    code,
     nairabg,
     avatar,
     recieve,
